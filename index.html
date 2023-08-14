@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin:auto;
+            animation: abc;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes abc{
+            from{
+                transform: rotateZ(0deg);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+        .c{
+            width: 100px;
+            height: 100px;
+            animation: xyz;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+        }
+        .aa{
+            
+            background-color: blue;
+         
+        }
+        .bb{
+            background-color: deeppink;
+            margin: auto;
+         
+        }
+        @keyframes xyz {
+            0%{
+                transform: translate(0px);
+            }
+            25%{
+                transform: translate(100px);
+                background-color:red;
+            }
+            50%{
+                transform: translate(250px);
+                background-color: green;
+            }
+            75%{
+                transform: translate(375px);
+                background-color: aqua;
+            }
+            100%{
+                transform: translate(400px);
+            }         
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="c aa"></div>
+    <div class="c bb"></div>
+</body>
+</html>
